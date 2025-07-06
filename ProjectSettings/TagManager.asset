@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Interactable
+  - Camera Zone
+  - Inventory
+  - Item Slots
+  - Sanity UI
+  - PondArea
+  - NPC
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - SolidObjects
+  - Interactable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: UI
+    uniqueID: 3234012625
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 541630553
+    locked: 0
+  - name: Midleground
+    uniqueID: 3706220375
+    locked: 0
+  - name: Player
+    uniqueID: 2095324169
+    locked: 0
+  - name: Foreground
+    uniqueID: 3448944053
+    locked: 0
