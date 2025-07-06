@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset Toilet_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 573
+        width: 130
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e23a4357614f24faac01e9baa7b66f
+      internalID: -939413508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Toilet_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 303
+        width: 355
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f995513e3ac7fb46a9ce79188c87d2c
+      internalID: 1834374048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Toilet_2
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 239
+        width: 613
+        height: 590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244956b1c9ae96c48b914eb0b6b9d5ea
+      internalID: 383756117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Toilet_3
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 293
+        width: 168
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41538a444ef22e4e8e27b373adeb928
+      internalID: 67495197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Toilet_4
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 290
+        width: 210
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add9ca15ddca4a84ab8e1218a660c2bd
+      internalID: 1867326607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Toilet_6
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 207
+        width: 102
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649c9f8dab384c44dbf8d8385390129d
+      internalID: 785510128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +232,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset Toilet_0: -939413508
+      Asset Toilet_1: 1834374048
+      Asset Toilet_10: 1531148092
+      Asset Toilet_11: 1343241782
+      Asset Toilet_12: -641264413
+      Asset Toilet_2: 383756117
+      Asset Toilet_3: 67495197
+      Asset Toilet_4: 1867326607
+      Asset Toilet_5: -670790784
+      Asset Toilet_6: 785510128
+      Asset Toilet_7: 2031970939
+      Asset Toilet_8: 226467440
+      Asset Toilet_9: 194374569
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

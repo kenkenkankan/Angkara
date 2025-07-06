@@ -2,12 +2,19 @@ using UnityEngine;
 
 public class LanternArea : MonoBehaviour
 {
+    private SanityUIManager sanityUI;
+
+    private void Start()
+    {
+        sanityUI = FindObjectOfType<SanityUIManager>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            PlayerStats.Instance.StartLanternRegen();
-            Debug.Log("Player entered Lantern Area, starting regeneration.");
+            sanityUI?.StartSanityRegen();
+            Debug.Log("Player entered Lantern Area, starting sanity regen.");
         }
     }
 
@@ -15,7 +22,8 @@ public class LanternArea : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            PlayerStats.Instance.StopLanternRegen();
+            sanityUI?.StopSanityRegen();
+            Debug.Log("Player left Lantern Area, stopping sanity regen.");
         }
     }
 }

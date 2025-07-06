@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset Gudang 2_0
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 289
+        width: 534
+        height: 593
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f65c59d26316a94e8f92646642fb7e2
+      internalID: -753842414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Gudang 2_1
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 637
+        width: 83
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac1f1b43bd25334fb5fa5db3d10399c
+      internalID: -140394246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Gudang 2_2
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 634
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b454af39e2ecec42aca3ffe633a9c3c
+      internalID: -304236328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Gudang 2_4
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 623
+        width: 78
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3b8bef13d32e4459281e6d59abd5b7
+      internalID: 362074772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Gudang 2_5
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 530
+        width: 104
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39073253ad4332742857ecc22cffe37a
+      internalID: -1374987635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Gudang 2_6
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 591
+        width: 161
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5117397d74ebc894682551ec21b80f50
+      internalID: -1418853526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Gudang 2_7
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 305
+        width: 113
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15b040133d9dc2469d326d7d776edb7
+      internalID: -1404367364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Gudang 2_8
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 300
+        width: 181
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef64f840c734724c81965094dcf8fb8
+      internalID: 842171053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Gudang 2_9
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 303
+        width: 101
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245937fa32611df4584f68c9063d0fa3
+      internalID: -2112778560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Gudang 2_11
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 296
+        width: 157
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0856595f2e2dc489878ec3d6e4cdd7
+      internalID: 11896185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +316,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset Gudang 2_0: -753842414
+      Asset Gudang 2_1: -140394246
+      Asset Gudang 2_10: -614677987
+      Asset Gudang 2_11: 11896185
+      Asset Gudang 2_2: -304236328
+      Asset Gudang 2_3: -1848575679
+      Asset Gudang 2_4: 362074772
+      Asset Gudang 2_5: -1374987635
+      Asset Gudang 2_6: -1418853526
+      Asset Gudang 2_7: -1404367364
+      Asset Gudang 2_8: 842171053
+      Asset Gudang 2_9: -2112778560
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

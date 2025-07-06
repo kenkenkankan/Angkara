@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,8 +12,11 @@ public class SanityUIManager : MonoBehaviour
     [SerializeField] ParticleSystem colorOver;
     [SerializeField] Color newColor;
     [SerializeField] bool debug;
+    private Coroutine regenRoutine;
     public void UpdateVisual(float sanityValue)
     {
+        Debug.Log("invoke!");
+
         ParticleSystem.ColorOverLifetimeModule colormodule = colorOver.colorOverLifetime;
         if (sanityValue >= 75)
             colormodule.color = knob.color = newColor = fineGrad.colorKeys[0].color;
@@ -40,5 +44,31 @@ public class SanityUIManager : MonoBehaviour
     {
         animator.SetFloat("Sanity", sanityVal);
         OnSanityChanged?.Invoke(sanityVal);
+    }
+
+    public void StartSanityRegen()
+    {
+        if (regenRoutine == null)
+            regenRoutine = StartCoroutine(RegenerateSanity());
+    }
+
+    public void StopSanityRegen()
+    {
+        if (regenRoutine != null)
+        {
+            StopCoroutine(regenRoutine);
+            regenRoutine = null;
+        }
+    }
+
+    IEnumerator RegenerateSanity()
+    {
+        while (true)
+        {
+            yield return new WaitForSecondsRealtime(0.5f); // pakai Realtime agar tetap bisa jalan saat Time.timeScale = 0
+            sanityVal += 2f;
+            if (sanityVal > 100f)
+                sanityVal = 100f;
+        }
     }
 }

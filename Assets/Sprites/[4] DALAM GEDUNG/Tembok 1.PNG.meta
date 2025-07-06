@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Tembok 1_0
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 151
+        width: 376
+        height: 808
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd755a0c8a0025646be2c612a00a0c67
+      internalID: 809271653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tembok 1_1
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 152
+        width: 374
+        height: 808
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70beda2354421a45af275c085dd49cb
+      internalID: -1134626960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tembok 1_2
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 152
+        width: 369
+        height: 809
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1519a3653e10c9419c2ede2c0d3584f
+      internalID: -88333989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tembok 1_3
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 155
+        width: 376
+        height: 808
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37919fb4e4224af42a1858f24395b736
+      internalID: 1851180175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +190,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tembok 1_0: 809271653
+      Tembok 1_1: -1134626960
+      Tembok 1_10: -807626725
+      Tembok 1_11: 1700492659
+      Tembok 1_12: -697520058
+      Tembok 1_13: 563687827
+      Tembok 1_14: -665784234
+      Tembok 1_15: -1402808717
+      Tembok 1_2: -88333989
+      Tembok 1_3: 1851180175
+      Tembok 1_4: 117474568
+      Tembok 1_5: 1478167675
+      Tembok 1_6: 1378037086
+      Tembok 1_7: -2041132389
+      Tembok 1_8: -1459752730
+      Tembok 1_9: -758173281
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

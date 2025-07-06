@@ -233,7 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7138322204960541951}
   m_Layer: 5
-  m_Name: AudioSlider
+  m_Name: Audio Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -327,8 +327,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 03b91fa36fe86c04bbc4e5c566ee454d, type: 2}
-  m_sharedMaterial: {fileID: 5628083880636814896, guid: 03b91fa36fe86c04bbc4e5c566ee454d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6c443ad0d999c0445a98bf0aaf8a0812, type: 2}
+  m_sharedMaterial: {fileID: -1187722597501855833, guid: 6c443ad0d999c0445a98bf0aaf8a0812, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

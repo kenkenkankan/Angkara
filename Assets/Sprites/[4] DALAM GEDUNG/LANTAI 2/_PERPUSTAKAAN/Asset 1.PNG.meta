@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset 1_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 388
+        width: 327
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4130197f837a40e4ba7da4791932acd2
+      internalID: -1840457622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 1_1
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 398
+        width: 247
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1469022f006cdf46a4c089fbe428235
+      internalID: 701046726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 1_2
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 180
+        width: 257
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac014806d800624449577ef74fdf8882
+      internalID: 1917856991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 1_7
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 393
+        width: 545
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa583638f4a14cc4885e203e960e5fe5
+      internalID: -293753372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 1_9
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 400
+        width: 428
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8cab4f853616645b25e42a1ecec206
+      internalID: 1581603734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +211,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset 1_0: -1840457622
+      Asset 1_1: 701046726
+      Asset 1_2: 1917856991
+      Asset 1_3: 1141225857
+      Asset 1_4: 1796610919
+      Asset 1_5: 434298661
+      Asset 1_6: -1460648278
+      Asset 1_7: -293753372
+      Asset 1_8: -399147004
+      Asset 1_9: 1581603734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

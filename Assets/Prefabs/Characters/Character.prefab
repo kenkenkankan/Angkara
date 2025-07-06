@@ -17,10 +17,12 @@ GameObject:
   - component: {fileID: 1655014505533863561}
   - component: {fileID: 5890248972302788067}
   - component: {fileID: 7512251338005757054}
+  - component: {fileID: 3292377892866807835}
+  - component: {fileID: 3314056749431736090}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -97,7 +99,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -163,15 +165,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemSlots:
-  - item: {fileID: 0}
+  - index: 0
+    item: {fileID: 0}
     image: {fileID: 0}
     itemButton: {fileID: 0}
-  - item: {fileID: 0}
+    icon: {fileID: 0}
+  - index: 0
+    item: {fileID: 0}
     image: {fileID: 0}
     itemButton: {fileID: 0}
-  - item: {fileID: 0}
+    icon: {fileID: 0}
+  - index: 0
+    item: {fileID: 0}
     image: {fileID: 0}
     itemButton: {fileID: 0}
+    icon: {fileID: 0}
   itemJournal: []
   itemUI:
     itemName: {fileID: 0}
@@ -209,20 +217,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de34e6050c3a8084ab784116240a951d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 821c2cd0feedbb04e9512bd087774d16, type: 2}
-  currentStats:
-    sanityRecoveryRate: 0
-    fearResistance: 0
-    movementSpeed: 1
-    Sanity: 1
-    fearDamage: 0
-  isSanitySubsribed: 0
-  currentSanityRecoveryRate: 0
-  currentSanityState: 0
-  sanityValueUI: {fileID: 0}
-  baseSanityRecovery: 0
-  sanityBar: {fileID: 0}
-  SBarProgressTime: 1
+  movementSpeed: 1
+  baseSanity: 100
+  sanityRecoveryCooldown: 0.4
+  sanityParticles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  lanternRegenRate: 0.4
+  sanityText: {fileID: 0}
   sanityGradient:
     serializedVersion: 2
     key0: {r: 0.04905659, g: 0, b: 0, a: 1}
@@ -265,6 +269,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915616bc18eb5334b80d4db97a15fb01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &3292377892866807835
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855978757362084505}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.4168918
+  m_Height: 30.000002
+  m_Direction: 1
+  m_Center: {x: 1.1684604, y: 0, z: 0}
+--- !u!54 &3314056749431736090
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855978757362084505}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4330794296121241670
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +371,7 @@ MonoBehaviour:
   m_Intensity: 3.54
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 0000000059a04820576fe8dc091ce47c
+  m_ApplyToSortingLayers: 576fe8dc091ce47c59a04820
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0

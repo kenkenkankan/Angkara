@@ -3,22 +3,16 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour, IDataPersistence
+public class PlayerStats : MonoBehaviour
 {
     public static PlayerStats Instance;
-
-    public Vector3 lastCheckPoint;
-    public Vector3 lastSavePoint; // Sepertinya salah satu aja
-
     public bool isSanitySubscribed { get; set; }
     public PlayerStats Stats => this;
-
-    public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
     public float movementSpeed = 1f;
 
+
     [Header("Sanity Settings")]
-    private float currentSanity = 100f; // Internal 0ï¿½1
+    private float currentSanity = 100f; // Internal 0–1
     [SerializeField] private float baseSanity = 100f;
     [SerializeField] private float sanityRecoveryCooldown = 2f;
 
@@ -73,21 +67,6 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
 
     void OnEnable() => OnSanityChanged += HandleSanityChange;
     void OnDisable() => OnSanityChanged -= HandleSanityChange;
-
-    public Vector3 GetLastCheckPoint()
-    {
-        return lastCheckPoint;
-    }
-
-    public void LoadData(GameData data)
-    {
-        transform.position = data.playerPosition;
-    }
-
-    public void SaveData(GameData data)
-    {
-        data.playerPosition = GetLastCheckPoint();
-    }
 
     public void ModifySanity(float amount)
     {
@@ -215,9 +194,4 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
     // Opsional untuk skrip lain
     public void ReduceSanity(float amount) => ModifySanity(-amount / 100f);
     public void RecoverSanity(float amount) => ModifySanity(amount / 100f);
-
-    public void GenerateGuID()
-    {
-        throw new NotImplementedException();
-    }
 }

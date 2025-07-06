@@ -51,7 +51,7 @@ public class PlayerInventory : MonoBehaviour
 
         public void AssignItem(ItemObject item)
         {
-           
+
         }
 
 
@@ -99,7 +99,11 @@ public class PlayerInventory : MonoBehaviour
             int capturedIndex = slot.index; // hindari closure problem
             slot.value.itemButton.onClick.AddListener(() =>
             {
-                UseItem(capturedIndex); // atau bisa ganti ke RemoveItem(capturedIndex);
+                var clickedItem = itemSlots[capturedIndex].item;
+                if (clickedItem != null)
+                {
+                    ShowDescription(clickedItem); // Tampilkan deskripsi item, bukan langsung digunakan
+                }
             });
         }
     }
@@ -196,7 +200,7 @@ public class PlayerInventory : MonoBehaviour
 
     public void RemoveItem()
     {
-        
+
     }
 
     public void UseItem(int index)
@@ -210,19 +214,19 @@ public class PlayerInventory : MonoBehaviour
     }
 
     public void ApplySelectedItem()
-{
-    var selectedItem = itemUI.image.sprite;
-    for (int i = 0; i < itemSlots.Count; i++)
     {
-        if (itemSlots[i].item != null && itemSlots[i].item.icon == selectedItem)
+        var selectedItem = itemUI.image.sprite;
+        for (int i = 0; i < itemSlots.Count; i++)
         {
-            itemSlots[i].item.ApplyEffect(gameObject); // <-- Panggil efek item
-            itemSlots[i].ClearSlot();
-            CloseDescription();
-            break;
+            if (itemSlots[i].item != null && itemSlots[i].item.icon == selectedItem)
+            {
+                itemSlots[i].item.ApplyEffect(gameObject); // <-- Panggil efek item
+                itemSlots[i].ClearSlot();
+                CloseDescription();
+                break;
+            }
         }
     }
-}
 
     public bool TryUseStick()
     {

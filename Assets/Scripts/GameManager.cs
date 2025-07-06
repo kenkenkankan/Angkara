@@ -2,17 +2,15 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour, IDataPersistence
+public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
-    [SerializeField] private string chapterName;
 
     private Scene currentScene, previousScreen;
     public Scene CurrentScene => currentScene;
     public Scene PreviousScreen => previousScreen;
 
-    public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
 
     public static event Action<GameState> OnGameStateChanged = delegate { };
 
@@ -24,6 +22,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
     [Header("State")]
     public GameState currentState;
     public GameState previousState;
+
+
 
     private void Awake()
     {
@@ -46,6 +46,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
         InitState();
 
         Debug.Log("Start PlayerInput");
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void LoadScene(string SceneName)
@@ -99,16 +104,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
     {
         currentScene = scene;
         SetGameState(GameState.Gameplay);
-    }
-
-    public void LoadData(GameData data)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void SaveData(GameData data)
-    {
-        throw new NotImplementedException();
     }
 
     #endregion

@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class GhostAffectSanity : MonoBehaviour
+public class GhostAffectSanityUI : MonoBehaviour
 {
     public float detectRadius = 5f;
-    public float sanityDrainRate = 10f;
+    public float sanityDrainRate = 10f; // per detik
 
     private Transform player;
-    private PlayerStats playerStats;
+    private SanityUIManager sanityUI;
 
     private void Start()
     {
@@ -14,21 +14,22 @@ public class GhostAffectSanity : MonoBehaviour
         if (playerObj != null)
         {
             player = playerObj.transform;
-            playerStats = playerObj.GetComponent<PlayerStats>();
         }
+
+        sanityUI = FindObjectOfType<SanityUIManager>();
     }
 
     private void Update()
     {
-        if (player == null || playerStats == null)
+        if (player == null || sanityUI == null)
             return;
 
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance <= detectRadius)
         {
-            // Kurangi sanity berdasarkan waktu
-            playerStats.ReduceSanity(sanityDrainRate * Time.deltaTime);
+            float newSanity = Mathf.Max(0, sanityUI.sanityVal - sanityDrainRate * Time.deltaTime);
+            sanityUI.sanityVal = newSanity;
         }
     }
 

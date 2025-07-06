@@ -3,6 +3,7 @@ using System.Collections;
 using System.Globalization;
 using UnityEngine;
 
+
 public class PlayerInput : MonoBehaviour
 {
     public static event Action OnInteract = delegate { };
@@ -16,11 +17,16 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private Transform flashlightAnchor;
 
     const float BASE_MOVE_SPEED = 4;
-    public bool isMoving;
+    public bool isMoving = false;
 
     public static PlayerInput Instance;
 
     private Vector2 input;
+    [SerializeField] private float movingOffsetX = -3.2f;
+    [SerializeField] private float idleOffsetX = 0.3f;
+    private Transform player;
+
+    private float currentOffsetX;
 
     [Header("Layer Masks")]
     public LayerMask solidObjectsLayer;
@@ -104,7 +110,7 @@ public class PlayerInput : MonoBehaviour
         }
 
         if (Input.anyKeyDown)
-        {
+        {   
             if (Input.GetKeyDown(KeyCode.E) && currentPlayerState == PlayerState.Idle)
             {
                 if (Interactable != null)
@@ -129,6 +135,7 @@ public class PlayerInput : MonoBehaviour
         }
 
         PlayerStateHandler();
+
     }
 
     private void MovingController()
@@ -137,16 +144,23 @@ public class PlayerInput : MonoBehaviour
 
         if (input.x != 0)
         {
+            // Flip arah anchor dengan scale
             Vector3 scale = flashlightAnchor.localScale;
-            scale.x = -Mathf.Sign(input.x); // flip arah X
+            scale.x = -Mathf.Sign(input.x); 
             flashlightAnchor.localScale = scale;
+
+            
         }
 
+
         if (input.x != 0) input.y = 0;
+
 
         if (input != Vector2.zero)
         {
             animator.SetFloat("MoveX", input.x);
+
+
 
             var targetPos = transform.position;
             targetPos.x += input.x;

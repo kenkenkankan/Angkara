@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset 2_0
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 85
+        width: 227
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c667d71306aab5940bc33a9d28bfa46c
+      internalID: 516654254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 2_2
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 293
+        width: 172
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62e8bba5e47cd144a99470b1542606b
+      internalID: -861424762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 2_4
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 276
+        width: 376
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdec9fdcd7b9534a93b3c6c1d9a4908
+      internalID: 1482800382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 2_5
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 321
+        width: 244
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a145c1ddad1ac240878183a20415de6
+      internalID: 830075972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +190,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset 2_0: 516654254
+      Asset 2_1: 866850347
+      Asset 2_10: -1389622925
+      Asset 2_11: -517186315
+      Asset 2_2: -861424762
+      Asset 2_3: -930831123
+      Asset 2_4: 1482800382
+      Asset 2_5: 830075972
+      Asset 2_6: 431758338
+      Asset 2_7: 8125087
+      Asset 2_8: -1787505240
+      Asset 2_9: -149147409
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

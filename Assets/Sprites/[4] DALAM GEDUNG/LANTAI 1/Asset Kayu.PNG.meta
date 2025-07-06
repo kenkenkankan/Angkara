@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset Kayu_1
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 298
+        width: 204
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029ed44df68c6aa4eaa8add01c0e0719
+      internalID: -1851079288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Kayu_2
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 282
+        width: 349
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e27eff643bb794eba5577987a4aa73
+      internalID: 773015364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Kayu_4
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 283
+        width: 768
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ba3b4d8ffb39a45a7c80dd34ce3b32
+      internalID: -2106830359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Kayu_6
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 279
+        width: 261
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371258ac99c013a4da0e7829b325000a
+      internalID: 476029860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +190,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset Kayu_0: -1232600455
+      Asset Kayu_1: -1851079288
+      Asset Kayu_10: 407695411
+      Asset Kayu_2: 773015364
+      Asset Kayu_3: 866616608
+      Asset Kayu_4: -2106830359
+      Asset Kayu_5: 902108213
+      Asset Kayu_6: 476029860
+      Asset Kayu_7: -1131010814
+      Asset Kayu_8: 864832883
+      Asset Kayu_9: 883427413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

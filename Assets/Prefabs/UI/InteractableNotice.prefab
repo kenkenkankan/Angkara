@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 2286568940659688586}
   - component: {fileID: 2713013125058032352}
   m_Layer: 0
-  m_Name: InteractableNotice
+  m_Name: Interactable Notice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

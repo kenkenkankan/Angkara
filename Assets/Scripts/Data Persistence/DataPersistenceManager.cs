@@ -100,7 +100,7 @@ public class DataPersistenceManager : MonoBehaviour
 
         if (data == null)
         {
-            Debug.Log("No data was found. A new game must be starte first");
+            Debug.Log("No data was found. A new game must be start first");
             return;
         }
 

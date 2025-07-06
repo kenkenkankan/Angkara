@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Tembok Toilet_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 74
+        width: 212
+        height: 906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30babdf214b68b4e8b1c7661f0ac45a
+      internalID: -1853721369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tembok Toilet_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 160
+        width: 379
+        height: 811
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c5d034993c49b46b0ac9b5f25e95bb
+      internalID: -1564663288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tembok Toilet_4
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 164
+        width: 381
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3fdb6553e2b694cbef708d9bb7bc98
+      internalID: 1499930093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tembok Toilet_6
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 163
+        width: 380
+        height: 808
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98137e8d9728d5a408e2b97dafc79513
+      internalID: 755112598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +190,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tembok Toilet_0: -1853721369
+      Tembok Toilet_1: -1564663288
+      Tembok Toilet_2: 1127347300
+      Tembok Toilet_3: 249113964
+      Tembok Toilet_4: 1499930093
+      Tembok Toilet_5: -1966082785
+      Tembok Toilet_6: 755112598
+      Tembok Toilet_7: 1980750921
+      Tembok Toilet_8: -129193140
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

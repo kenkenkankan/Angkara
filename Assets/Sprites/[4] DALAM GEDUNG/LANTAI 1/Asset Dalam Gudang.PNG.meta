@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset Dalam Gudang_0
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 644
+        width: 185
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebd274a4f5b1194a8555c4abdc58a3a
+      internalID: 483388810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Dalam Gudang_1
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 813
+        width: 224
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c382838d34092b41a8398d55639c97f
+      internalID: 882740338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Dalam Gudang_2
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 553
+        width: 184
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e7da200d718e14d9f55c64995739f0
+      internalID: 324344432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Dalam Gudang_3
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 553
+        width: 182
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de89debf6f75a4d498d92c32a573ca0b
+      internalID: -1355930264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Dalam Gudang_4
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 493
+        width: 360
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73f86cdfb4a01a44b5ca14779f1ed61
+      internalID: -1395706401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Dalam Gudang_5
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 392
+        width: 303
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d11550350a19be4daa17983a5216a6b
+      internalID: 1020648762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Dalam Gudang_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 186
+        width: 291
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99a3f6b637913f48a9aab6878ba5c61
+      internalID: 491144693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Dalam Gudang_11
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 71
+        width: 301
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f0533cb4f17e443aac56487e5c912f
+      internalID: 1819323915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Dalam Gudang_12
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 181
+        width: 158
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427f9a412e5ee0e44a4d917863ef8c4c
+      internalID: 209847396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +295,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset Dalam Gudang_0: 483388810
+      Asset Dalam Gudang_1: 882740338
+      Asset Dalam Gudang_10: 62288574
+      Asset Dalam Gudang_11: 1819323915
+      Asset Dalam Gudang_12: 209847396
+      Asset Dalam Gudang_13: 1909537326
+      Asset Dalam Gudang_14: -749153641
+      Asset Dalam Gudang_15: 375136447
+      Asset Dalam Gudang_16: 627517424
+      Asset Dalam Gudang_17: -680558500
+      Asset Dalam Gudang_2: 324344432
+      Asset Dalam Gudang_3: -1355930264
+      Asset Dalam Gudang_4: -1395706401
+      Asset Dalam Gudang_5: 1020648762
+      Asset Dalam Gudang_6: 1742635775
+      Asset Dalam Gudang_7: 40355172
+      Asset Dalam Gudang_8: 491144693
+      Asset Dalam Gudang_9: 1450218449
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

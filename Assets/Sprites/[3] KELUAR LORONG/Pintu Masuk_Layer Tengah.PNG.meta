@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pintu Masuk_Layer Tengah_0
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 116
+        width: 249
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e860197f1696644690691350d4575f6
+      internalID: 1330808219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pintu Masuk_Layer Tengah_2
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 108
+        width: 246
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e660ca86810cdd43ba98434ba76314e
+      internalID: 2128929620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pintu Masuk_Layer Tengah_3
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 96
+        width: 104
+        height: 899
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a8d95108a53cc49943f96ae3d603e3
+      internalID: 1702671958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pintu Masuk_Layer Tengah_6
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 146
+        width: 68
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e06cb2378abf444b1a12d89bc477e0
+      internalID: -1215472147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +190,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pintu Masuk_Layer Tengah_0: 1330808219
+      Pintu Masuk_Layer Tengah_1: -837023048
+      Pintu Masuk_Layer Tengah_2: 2128929620
+      Pintu Masuk_Layer Tengah_3: 1702671958
+      Pintu Masuk_Layer Tengah_4: -322578809
+      Pintu Masuk_Layer Tengah_5: -580403550
+      Pintu Masuk_Layer Tengah_6: -1215472147
+      Pintu Masuk_Layer Tengah_7: -580587644
+      Pintu Masuk_Layer Tengah_8: 846365002
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

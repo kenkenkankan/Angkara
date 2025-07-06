@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset Basement Blkng_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 840
+        width: 156
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc6bf5580a71e04c8d8721597a7c5ae
+      internalID: 1986611943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Basement Blkng_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 838
+        width: 190
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a929d9bbf3e766468c5ed3a5aa85022
+      internalID: 796199530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Basement Blkng_3
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 133
+        width: 861
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548953e5e58f932418b65a3d61969cc5
+      internalID: 922559420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Basement Blkng_4
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 860
+        width: 108
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8afe9b80b7fa24585e76719433c14f
+      internalID: 917245987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Basement Blkng_6
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 631
+        width: 202
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531ec67457019de47ab54a2a576b1d65
+      internalID: 679232578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Basement Blkng_8
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 306
+        width: 106
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93d4172700423b499a541905207c2d4
+      internalID: 687006555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Basement Blkng_10
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 292
+        width: 122
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c9c7f6920ea934c89f2e917a6422a9
+      internalID: -445294405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Basement Blkng_12
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 291
+        width: 138
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086ccdaa49359674b9a4219f4a723ba9
+      internalID: -1015594697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Basement Blkng_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 70
+        width: 213
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba155bc98e8c7c4aadea5395fce587f
+      internalID: 2121683075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Basement Blkng_18
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 80
+        width: 132
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd3a1c4c87e41643924a0e6ce80e678
+      internalID: -1335636011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Basement Blkng_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 94
+        width: 95
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be06d59acb971ca48986180f2fd65f11
+      internalID: 435466897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset Basement Blkng_20
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 84
+        width: 148
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85af3b892800f1740a92d7d66af918fd
+      internalID: 1096374348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +358,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset Basement Blkng_0: 1986611943
+      Asset Basement Blkng_1: 796199530
+      Asset Basement Blkng_10: -445294405
+      Asset Basement Blkng_11: 34378893
+      Asset Basement Blkng_12: -1015594697
+      Asset Basement Blkng_13: -451410355
+      Asset Basement Blkng_14: -561186248
+      Asset Basement Blkng_15: 2121683075
+      Asset Basement Blkng_16: -1352278056
+      Asset Basement Blkng_17: -255676396
+      Asset Basement Blkng_18: -1335636011
+      Asset Basement Blkng_19: 435466897
+      Asset Basement Blkng_2: -355446389
+      Asset Basement Blkng_20: 1096374348
+      Asset Basement Blkng_21: -700412718
+      Asset Basement Blkng_3: 922559420
+      Asset Basement Blkng_4: 917245987
+      Asset Basement Blkng_5: -822639826
+      Asset Basement Blkng_6: 679232578
+      Asset Basement Blkng_7: 702278845
+      Asset Basement Blkng_8: 687006555
+      Asset Basement Blkng_9: 502357926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

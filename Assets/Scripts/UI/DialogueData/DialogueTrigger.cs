@@ -1,21 +1,30 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour, IDataPersistence
+[System.Serializable]
+public class DialogueCharacter
 {
-    [SerializeField] private string characterId;
-    public string Id { get => characterId; set => characterId = value ; }
+    public string name;
+    public Sprite icon;
+}
 
-    [Header("Dialogue Lines Configurations")]
-    [SerializeField] private string currentDialogueKey; // Default section dialogue pertama
-    [SerializeField] private List<string> completedDialogueKeys; // Referensi untuk persistence check
+[System.Serializable]
+public class DialogueLine
+{
+    public DialogueCharacter character;
+    [TextArea(3, 10)]
+    public string line;
+}
 
-    // Pengganti single dialogue lines
-    [SerializeField] SerializableDictionary<string, Dialogue> dialogues = new ();
-    
-    
+[System.Serializable]
+public class Dialogue
+{
+    public List<DialogueLine> dialogueLines = new List<DialogueLine>();
+}
+
+public class DialogueTrigger : MonoBehaviour
+{
+    public Dialogue dialogue;
     private bool isPlayerInRange = false;
 
     [SerializeField] private GameObject confirmNotif;
@@ -35,31 +44,11 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
     {
         if (!DialogueManager.Instance.isDialogueActive)
         {
-            foreach (var dialogue in dialogues)
-            if (dialogue.Key == currentDialogueKey)
-            {
-                DialogueManager.Instance.StartDialogue(dialogue.Value);
-                DialogueManager.Instance.SetActiveSpeaker(this);
-                
-                Debug.Log("Dialogue Triggered: " + dialogue.Value.dialogueLines.Count + " lines available.");
-            }
-            // DialogueManager.Instance.StartDialogue(dialogue);
+            DialogueManager.Instance.StartDialogue(dialogue);
+            Debug.Log("Dialogue Triggered: " + dialogue.dialogueLines.Count + " lines available.");
         }
     }
 
-    public void SetNextDialogueSection()
-    {
-        completedDialogueKeys.Add(currentDialogueKey);
-        
-        foreach (var dialogueSection in dialogues)
-        {
-            if (!completedDialogueKeys.Contains(dialogueSection.Key))
-            {
-                currentDialogueKey = dialogueSection.Key;
-                break;
-            }
-        }
-    }    
 
     private void OnTriggerEnter(Collider player)
     {
@@ -78,28 +67,6 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
             isPlayerInRange = false;
             confirmNotif.SetActive(false);
             Debug.Log("Player left dialogue area");
-        }
-    }
-
-    public void LoadData(GameData data)
-    {
-        var dialogueKeys = data.dialoguesKeyPoints.GetValueOrDefault(currentDialogueKey);
-        if (dialogueKeys != null)
-        {
-            foreach (var key in dialogueKeys)
-                completedDialogueKeys.Add(key);
-        }
-    }
-
-    public void SaveData(GameData data)
-    {
-        if (!data.dialoguesKeyPoints.ContainsKey(Id))
-            data.dialoguesKeyPoints.Add(Id, new());
-
-        foreach (var key in completedDialogueKeys)
-        {
-            if (!data.dialoguesKeyPoints[Id].Contains(key))
-               data.dialoguesKeyPoints[Id].Add(key);
         }
     }
 }
