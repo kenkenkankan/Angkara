@@ -2649,7 +2649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectRadius: 10
-  sanityDrainRate: 1
+  sanityDrainRate: 5
 --- !u!1 &949015073
 GameObject:
   m_ObjectHideFlags: 0

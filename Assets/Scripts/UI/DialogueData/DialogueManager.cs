@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<DialogueLine> lines;
 
     public bool isDialogueActive = false;
+    public bool isTyping = false;
 
     public float typingSpeed = 0.2f;
 
@@ -91,7 +92,7 @@ public class DialogueManager : MonoBehaviour
     IEnumerator AutoEndDialogueAfterDelay(float delay)
     {
         yield return new WaitForSecondsRealtime(delay); // Realtime agar tetap jalan meski Time.timeScale = 0
-        EndDialogue();
+        DisplayNextDialogueLine();
     }
 
     public void EndDialogue()

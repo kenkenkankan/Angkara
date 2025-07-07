@@ -11,7 +11,21 @@ public class GameOverController : MonoBehaviour
     {
         if (!isGameOver && sanityUI.sanityVal <= 0f)
         {
-            TriggerGameOver();
+            if (!isGameOver && sanityUI.sanityVal <= 0f)
+            {
+                // Pastikan AudioManager ada dan referensi death clip sudah di-set
+                if (AudioManager.Instance != null && AudioManager.Instance.death != null)
+                {
+                    AudioManager.Instance.Play(AudioManager.Instance.death);
+                }
+                else
+                {
+                    Debug.LogError("AudioManager atau death clip tidak ditemukan!");
+                }
+
+                TriggerGameOver();
+                isGameOver = true; // Pastikan hanya trigger sekali
+            }
         }
     }
 
@@ -19,10 +33,10 @@ public class GameOverController : MonoBehaviour
     {
         isGameOver = true;
         gameOverPanel.SetActive(true);
-        Time.timeScale = 0f; // freeze gameplay
+        Time.timeScale = 0f; // freeze gameplay  
     }
 
-    // Dipanggil oleh button di UI
+    // Dipanggil oleh button di UI  
     public void RestartScene()
     {
         Time.timeScale = 1f;

@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class AutoDialogueTrigger : MonoBehaviour
@@ -14,11 +13,9 @@ public class AutoDialogueTrigger : MonoBehaviour
         {
             if (!DialogueManager.Instance.isDialogueActive)
             {
-                DialogueManager.Instance.StartDialogue(dialogue);
                 hasTriggered = true;
-                Debug.Log("Auto-dialogue triggered with " + dialogue.dialogueLines.Count + " lines.");
+                DialogueManager.Instance.StartDialogue(dialogue);
             }
         }
     }
-
 }
