@@ -1,31 +1,19 @@
 using System;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.UI;
 
-public class OptionsMenu : Menu
+public class OptionsMenu : Menu, IDataPersistence
 {
     // [SerializeField] private TMP_Dropdown resolutionDropdown;
     [Header("Menu Navigation")]
-    [SerializeField] private MainMenu mainMenu;
-
-    [Serializable]
-    private class Audio
-    {
-        public string Name;
-        public TMP_Text audioValue;
-        public Slider audioSlider;
-    }
-
-    [Header("Audio Settings")]
-    [SerializeField] private AudioMixer audioMixer;
-    [SerializeField] private List<Audio> audios;
+    [SerializeField] private Menu otherMenu;
+    [SerializeField] private PauseMenu pauseMenu;
 
     private int calledIndex;
 
     private Resolution[] resolutions;
+
+    public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
     // void Awake()
     // {   
@@ -69,11 +57,8 @@ public class OptionsMenu : Menu
 
     void Start()
     {
-        for (int i = 0; i < audios.Count; i++)
-        {
-            SetIndex(i);
-            SetAudio(0);
-        }
+        if (otherMenu is PauseMenu ps && pauseMenu == null)
+            pauseMenu = ps;
     }
 
     public void SetResolution(int resolutionIndex)
@@ -82,21 +67,17 @@ public class OptionsMenu : Menu
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
         PlayerPrefs.SetInt("resolution", resolutionIndex);
     }
+    
     /// <summary>
     /// Audio Sliders' use this method
     /// </summary>
     /// <param name="val"></param>
     public void SetAudio(float val)
     {
-        if (val == 0)
-            val = PlayerPrefs.GetFloat(audios[calledIndex].Name, 0);
-        audioMixer.SetFloat(audios[calledIndex].Name, val);
-        audios[calledIndex].audioValue.text = ((int)val + 80f).ToString();
-        audios[calledIndex].audioSlider.value = val;
-        PlayerPrefs.SetFloat(audios[calledIndex].Name, val);
+        AudioManager.Instance.SetAudioVolume(val, calledIndex);
     }
 
-    public void SetIndex(int index)
+    public void SetSliderIndex(int index)
     {
         calledIndex = index;
     }
@@ -105,12 +86,26 @@ public class OptionsMenu : Menu
     {
         Screen.fullScreen = isFullscreen;
         FindAnyObjectByType<Toggle>().isOn = isFullscreen;
-        PlayerPrefs.SetInt("fullscreen", isFullscreen == true ? 1 : 0);
+        PlayerPrefs.SetInt("fullscreen", isFullscreen ? 1 : 0);
     }
 
     public override void DeactivateMenu()
     {
         base.DeactivateMenu();
-        mainMenu.ActivateMenu();
+        if (pauseMenu != null)
+            pauseMenu.ActivateMenu(false);
+    }
+
+    public void LoadData(GameData data)
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            SetSliderIndex(i);
+            SetAudio(0);
+        }
+    }
+
+    public void SaveData(GameData data)
+    {
     }
 }

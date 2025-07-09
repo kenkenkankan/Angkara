@@ -2,7 +2,11 @@ using UnityEngine;
 
 public class PersistentObjects : MonoBehaviour
 {
+<<<<<<< Updated upstream:Assets/Scripts/Data Persistence/PersistentObjects.cs
     private static PersistentObjects instance;
+=======
+    public static PersistentObject instance;
+>>>>>>> Stashed changes:Assets/PersistenceObject.cs
 
     void Awake()
     {
@@ -14,5 +18,10 @@ public class PersistentObjects : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void DestroyThisWhenQuit()
+    {
+        Destroy(gameObject);
     }
 }

@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        
+
         currentScene = SceneManager.GetActiveScene();
 
         InitState();
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     {
         if (currentState == newState)
             return;
-        
+
         OnGameStateChanged?.Invoke(newState);
 
         currentState = newState;
@@ -112,4 +112,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
     }
 
     #endregion
+    
+    public void DestroyThisWhenQuit()
+    {
+        Destroy(gameObject);
+    }
 }

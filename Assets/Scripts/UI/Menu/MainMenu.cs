@@ -42,7 +42,6 @@ public class MainMenu : Menu
     public void GoToOptionMenu()
     {
         OptionsMenu.ActivateMenu();
-        DeactivateMenu();
     }
 
     public void Quit()

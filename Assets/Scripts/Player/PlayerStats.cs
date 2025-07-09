@@ -216,8 +216,15 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
     public void ReduceSanity(float amount) => ModifySanity(-amount / 100f);
     public void RecoverSanity(float amount) => ModifySanity(amount / 100f);
 
+<<<<<<< Updated upstream
     public void GenerateGuID()
     {
         throw new NotImplementedException();
+=======
+
+    public void DestroyThisWhenQuit()
+    {
+        Destroy(gameObject);
+>>>>>>> Stashed changes
     }
 }
