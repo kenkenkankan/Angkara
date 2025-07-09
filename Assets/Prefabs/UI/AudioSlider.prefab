@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 6415511082346760933}
   - component: {fileID: 8425588005501672538}
   m_Layer: 5
-  m_Name: Handle
+  m_Name: Handle Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0.01
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -233,7 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7138322204960541951}
   m_Layer: 5
-  m_Name: Audio Slider
+  m_Name: AudioSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -477,16 +477,16 @@ MonoBehaviour:
   m_FillRect: {fileID: 215462672027372294}
   m_HandleRect: {fileID: 2413879072884403098}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 20
+  m_MinValue: 0
+  m_MaxValue: 100
   m_WholeNumbers: 1
-  m_Value: 20
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: OptionsMenu, Assembly-CSharp
-        m_MethodName: SetIndex
+        m_MethodName: SetSliderIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 7741168757021332793}
   - component: {fileID: 4422683035745932481}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Handle Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

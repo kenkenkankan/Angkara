@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PersistentObject : MonoBehaviour
 {
-    private static PersistentObject instance;
+    public static PersistentObject instance;
 
     void Awake()
     {
@@ -14,5 +14,10 @@ public class PersistentObject : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+    
+    public void DestroyThisWhenQuit()
+    {
+        Destroy(gameObject);
     }
 }
